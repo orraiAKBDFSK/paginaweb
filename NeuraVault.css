@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700;800&display=swap');
+
+:root {
+    --primario: #673AB7;
+    --accent: #C084FC;
+    --fondo: #1A1A1A;
+    --texto: #FFFFFF;
+    --texto-claro: #AAAAAA;
+}
+
+body {
+    font-family: 'Urbanist',;
+    background-color: var(--fondo);
+    color: var(--texto);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(13, 13, 13, 0.8);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--texto);
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-links .btn-accent {
+    background-color: var(--accent);
+    color: var(--texto);
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    font-size: 0.95rem;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    justify-content: space-between;
+    padding: 6rem 2rem 4rem 2rem;
+    margin: 0 auto;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding-left: 150px;
+}
+
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--texto);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--texto-claro);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.hero-image img {
+    max-width: 420px;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.7rem;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    color: var(--texto);
+}
+
+.btn-accent:hover {
+    opacity: 0.8;
+}
+
+.btn-outline {
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background-color: var(--accent);
+    color: var(--texto);
+}
+
+/* PARTNERS */
+.partners {
+    text-align: center;
+    padding: 2rem;
+}
+
+.partner-logos img {
+    max-width: 100px;
+    margin: 1rem;
+    opacity: 0.8;
+}
+
+.partner-logos img:hover {
+    opacity: 1;
+}
+
+/* FEATURES */
+.features {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.features p {
+    color: var(--texto-claro);
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+.features .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* STATS */
+.stats {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.stats p {
+    color: var(--texto-claro);
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+.stats-figures {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat p {
+    color: var(--texto-claro);
+}
+
+/* FUTURE */
+.future {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.future p {
+    color: var(--texto-claro);
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+.future-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.future-image img {
+    max-width: 400px;
+}
+
+.future-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.feature {
+    background-color: #222;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--texto-claro);
+    font-size: 0.9rem;
+    margin-top: 4rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .future-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image img {
+        margin-top: 2rem;
+    }
+}
+/* LOGIN */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: var(--fondo);
+}
+
+.login-box {
+    background-color: #222;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.login-box label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--texto);
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: #111;
+    color: var(--texto);
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--texto-claro);
+}
+
+.login-options a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+.register-option {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--texto-claro);
+}
+
+.register-option a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.register-option a:hover {
+    text-decoration: underline;
+}
