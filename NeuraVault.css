@@ -348,3 +348,31 @@ footer {
 .register-option a:hover {
     text-decoration: underline;
 }
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.1rem;
+        font-size: 1rem;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        margin: 0.5rem 0;
+    }
+
+    .future-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image img {
+        max-width: 280px;
+        margin-top: 2rem;
+    }
+}
+
