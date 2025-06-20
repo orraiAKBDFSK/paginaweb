@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Urbanist',;
+    font-family: 'Urbanist', sans-serif;
     background-color: var(--fondo);
     color: var(--texto);
     margin: 0;
@@ -31,6 +31,11 @@ body {
 .navbar-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
     align-items: center;
 }
 
@@ -61,16 +66,15 @@ body {
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    justify-content: space-between;
     padding: 6rem 2rem 4rem 2rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .hero-content {
     max-width: 600px;
-    padding-left: 150px;
+    padding-left: 10px;
 }
-
 
 .hero-content h1 {
     font-size: 4rem;
@@ -257,21 +261,6 @@ footer {
     margin-top: 4rem;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .future-content {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-image img {
-        margin-top: 2rem;
-    }
-}
 /* LOGIN */
 .login-container {
     display: flex;
@@ -348,9 +337,42 @@ footer {
 .register-option a:hover {
     text-decoration: underline;
 }
-@media (max-width: 480px) {
+
+/* RESPONSIVE MOVIL FINAL */
+@media (max-width: 600px) {
+
+    /* Navbar */
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .logo {
+        max-width: 160px;
+        margin-bottom: 1rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .nav-links a {
+        margin: 0;
+    }
+
+    /* Hero */
     .hero-content h1 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
+    }
+
+    .hero-image img {
+        max-width: 280px;
+        margin-top: 2rem;
     }
 
     .btn {
@@ -358,21 +380,7 @@ footer {
         font-size: 1rem;
     }
 
-    .navbar-container {
-        flex-direction: column;
-    }
-
-    .nav-links a {
-        margin: 0.5rem 0;
-    }
-
     .future-content {
         grid-template-columns: 1fr;
     }
-
-    .hero-image img {
-        max-width: 280px;
-        margin-top: 2rem;
-    }
 }
-
