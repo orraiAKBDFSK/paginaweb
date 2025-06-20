@@ -1,9 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.btn');
+    const faqQuestions = document.querySelectorAll('.faq-question');
 
-    buttons.forEach(button => {
-        button.addEventListener('click', function(event) {
-            alert('Botón clicado: ' + this.textContent);
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            }
         });
     });
 });
