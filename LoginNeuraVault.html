@@ -10,7 +10,7 @@
 <body>
 
     <section id="login" class="login-container">
-        <form class="login-box">
+    <form class="login-box" onsubmit="redirigirServicios(event)">
             <img src="logo.png" alt="NeuraVault Logo" style="max-width:100px; margin-bottom:1rem;">
             <h2>Iniciar Sesión</h2>
             
@@ -30,13 +30,13 @@
             <p class="register-option">¿No tienes cuenta? <a href="RegisterNeuraVault.html">Crear cuenta</a></p>
         </form>
     </section>
-    <script>
-    document.querySelector("#login-btn").addEventListener("click", function (e) {
-    e.preventDefault(); // evita que el formulario se envíe normalmente
-    // Aquí puedes validar datos si lo deseas
-    window.location.href = "index.html"; // redirige a la página principal
-    });
+<script>
+    function redirigirServicios(event) {
+    event.preventDefault(); // Evita que el formulario se envíe realmente
+    window.location.href = "ServiciosNeuraVault.html"; // Redirige a servicios
+    }
 </script>
+
 
 </body>
 </html>
