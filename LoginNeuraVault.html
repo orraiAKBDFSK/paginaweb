@@ -3,40 +3,165 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - NeuraVault</title>
+    <title>NeuraVault - Seguridad Ciudadana Digital</title>
     <link rel="stylesheet" href="NeuraVault.css" />
+    <script src="NeuraVault.js" defer></script>
 </head>
-
 <body>
 
-    <section id="login" class="login-container">
-        <form class="login-box">
-            <img src="logo.png" alt="NeuraVault Logo" style="max-width:100px; margin-bottom:1rem;">
-            <h2>Iniciar Sesión</h2>
-            
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+    <header class="navbar" role="banner">
+        <div class="navbar-container">
+            <img src="logo.png" alt="NeuraVault Logo" class="logo" loading="lazy" />
+            <nav class="nav-links" role="navigation" aria-label="Menú principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#features">Características</a>
+                <a href="#testimonials">Testimonios</a>
+                <a href="#faq">FAQ</a>
+                <a href="LoginNeuraVault.html" target="_blank">Iniciar sesión</a>
+                <a href="#registro" class="btn btn-accent">Probar Gratis</a>
+            </nav>
+        </div>
+    </header>
 
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" placeholder="••••••••" required>
-
-            <div class="login-options">
-                <label><input type="checkbox" name="remember" /> Recordarme</label>
-                <a href="#">¿Olvidaste tu contraseña?</a>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Tu Escudo Digital<br>En La Ciudad</h1>
+                <p>Activa el modo seguro, comparte ubicación y detecta rutas peligrosas incluso sin batería.<br>THALAMOS siempre está un paso adelante del peligro.</p>
+                <div class="hero-buttons">
+                    <a href="#features" class="btn btn-accent">Explora la protección</a>
+                    <a href="#video" class="btn btn-outline">Ver Video</a>
+                </div>
             </div>
+            <div class="hero-image">
+                <img src="NEIRA3Dremo.png" alt="Hero Image" loading="lazy" />
+            </div>
+        </section>
 
-            <button type="submit" class="btn btn-accent" id="login-btn">Iniciar Sesión</button>
+        <section id="partners" class="partners">
+            <h4>Partners</h4>
+            <div class="partner-logos">
+                <img src="partner1.png" alt="Partner 1" loading="lazy" />
+                <img src="partner2.png" alt="Partner 2" loading="lazy" />
+                <img src="partner3.png" alt="Partner 3" loading="lazy" />
+            </div>
+        </section>
 
-            <p class="register-option">¿No tienes cuenta? <a href="RegisterNeuraVault.html">Crear cuenta</a></p>
-        </form>
-    </section>
-    <script>
-    document.querySelector("#login-btn").addEventListener("click", function (e) {
-    e.preventDefault(); // evita que el formulario se envíe normalmente
-    // Aquí puedes validar datos si lo deseas
-    window.location.href = "index.html"; // redirige a la página principal
-    });
-</script>
+        <section id="features" class="features">
+            <h2>Desglose Del Futuro</h2>
+            <p>Explora cómo NeuraVault y THALAMOS evolucionarán para convertir la seguridad ciudadana en una experiencia inteligente, predictiva y descentralizada.</p>
+            <div class="cards">
+                <article class="card">
+                    <h3>Expansión LATAM</h3>
+                    <p>En los próximos 12 meses, THALAMOS se integrará con autoridades en más de 5 países de LATAM.</p>
+                </article>
+                <article class="card">
+                    <h3>IA Predictiva de Riesgos</h3>
+                    <p>IA capaz de anticipar robos según patrones de movimiento y hora.</p>
+                </article>
+                <article class="card">
+                    <h3>Seguridad Offline Total</h3>
+                    <p>Bluetooth y localización para prevenir delitos incluso sin conexión.</p>
+                </article>
+            </div>
+        </section>
 
+        <section class="stats">
+            <h2>Aproveche Al Máximo El Producto</h2>
+            <p>Pioneros en seguridad ciudadana digital. THALAMOS transforma la prevención del delito con tecnología accesible y colaborativa.</p>
+            <div class="stats-figures">
+                <div class="stat"><h3>2M+</h3><p>Usuarios</p></div>
+                <div class="stat"><h3>500k+</h3><p>Transacciones</p></div>
+                <div class="stat"><h3>15+</h3><p>Países</p></div>
+            </div>
+        </section>
+
+        <section class="future">
+            <h2>El Futuro De La Tecnología De Protección Urbana</h2>
+            <p>Con THALAMOS, imaginamos un futuro donde la prevención, la colaboración y la protección digital son inmediatas.</p>
+            <div class="future-content">
+                <div class="future-image">
+                    <img src="imagen2.png" alt="Nueva Tecnología" loading="lazy" />
+                </div>
+                <div class="future-features">
+                    <div class="feature">
+                        <h3>Conectividad y ubicuidad</h3>
+                        <p>Seguridad colectiva. Cada usuario activa una red viva.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Transacción segura</h3>
+                        <p>Acciones seguras y verificables. Tus datos bajo tu control.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Ciberseguridad y protección descentralizada</h3>
+                        <p>Ciudadanos en el centro de su propia defensa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials" aria-labelledby="testimonios">
+            <h2 id="testimonios">Con La Confianza De Los Innovadores</h2>
+            <p>Protege tu seguridad personal y digital con la tranquilidad de estar respaldado por la mejor tecnología en prevención ciudadana inteligente.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Con THALAMOS, es increíble ver cómo la comunidad puede colaborar en tiempo real."</p>
+                    <h4>Andrea Rojas</h4><span>Estudiante</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"La app me ha permitido alertar rutas inseguras que antes nadie conocía."</p>
+                    <h4>Carlos Ortega</h4><span>Emprendedor</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Uso THALAMOS todos los días para sentirme más seguro en mi ciudad."</p>
+                    <h4>Lucía Fernández</h4><span>Arquitecta</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Recomiendo NeuraVault a todos mis colegas. La prevención colaborativa funciona."</p>
+                    <h4>Manuel Vera</h4><span>Ingeniero</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq" aria-labelledby="faqtitle">
+            <h2 id="faqtitle">Obtenga Respuestas A Preguntas Comunes</h2>
+            <p>Encuentra la información clave sobre nuestra app y cómo mejora tu seguridad digital.</p>
+
+            <details class="faq-item">
+                <summary class="faq-question">¿Qué es NeuraVault y cómo funciona THALAMOS?</summary>
+                <p>NeuraVault es una plataforma de seguridad digital. Su app THALAMOS permite crear una red colaborativa de protección y alertas en tiempo real.</p>
+            </details>
+
+
+            <details class="faq-item">
+    <summary class="faq-question">¿Necesito internet para usar THALAMOS?</summary>
+    <p>THALAMOS funciona tanto online como offline, utilizando tecnología Bluetooth Mesh para garantizar la cobertura incluso sin internet.</p>
+    </details>
+
+    <details class="faq-item">
+    <summary class="faq-question">¿Qué hago si me intentan robar?</summary>
+    <p>Puedes activar el botón de alerta inmediata en la app o utilizar el botón de falso acompañante para alertar a tus contactos cercanos.</p>
+    </details>
+
+    <details class="faq-item">
+    <summary class="faq-question">¿Puedo usar THALAMOS en cualquier ciudad del Perú?</summary>
+    <p>Sí, THALAMOS funciona en todo el territorio peruano, especialmente en las principales ciudades con alta conectividad comunitaria.</p>
+    </details>
+
+    <details class="faq-item">
+    <summary class="faq-question">¿Mi información personal está segura?</summary>
+    <p>Tu información está cifrada de extremo a extremo. Solo tú controlas tus datos, con altos estándares de seguridad digital.</p>
+    </details>
+
+    <details class="faq-item">
+    <summary class="faq-question">¿Cuánto cuesta usar THALAMOS?</summary>
+    <p>La versión básica de THALAMOS es gratuita. Algunas funciones avanzadas pueden requerir una suscripción premium.</p>
+    </details>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 NeuraVault. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
