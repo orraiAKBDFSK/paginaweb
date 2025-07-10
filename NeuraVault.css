@@ -442,6 +442,53 @@ footer {
     margin-top: 4rem;
 }
 
+/* estilo de servicios*/
+.servicios-container {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+.servicios-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+    color: var(--accent);
+    text-align: center;
+}
+
+.servicios-container p {
+    color: var(--texto-claro);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.servicio {
+    margin-bottom: 2rem;
+    background-color: #222;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+}
+
+.servicio h3 {
+    color: var(--accent);
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.servicio p {
+    color: var(--texto-claro);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+
 /* RESPONSIVE RECONSTRUIDO */
 @media (max-width: 768px) {
     .navbar-container {
